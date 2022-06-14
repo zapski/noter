@@ -228,6 +228,12 @@ viser hvor længe linux har været kørende siden opstart
 `nano` - alternativ til **vi**
 
 
+### du - **D**isk**U**sage
+
+`du -h * | sort -h | tail -30`
+
+
+
 ### groups
 
 `groups userName` - viser hvilke grupper user er medlem af
@@ -259,7 +265,7 @@ viser hvor længe linux har været kørende siden opstart
 
 Giver root adgang til kommandoen. Root adgang udløber typisk efter 5 minutter. Generelt er det bedre at benytte denne i stedet for su da ændringen vil afspejle synderen og ikke root brugeren.
 
-### su - **S**ubstitute**U**ser
+### su - **S**ubstitute**U**ser eller **S**witch**U**ser
 
 `su`
 
@@ -385,6 +391,7 @@ Og der benyttes følgende værdier :
 	- I brugerens home-katalog findes der en skjult fil ".bashrc", ".bash_profile" hvor der KAN være en umask
 		- Umask værdier er er modsat de værdier vi normalt kender fra chmod (hvorfor skal det være simpelt)
 - `chmod 777 <katalog> -R` - **u**SER, **g**ROUP, **o**THERS
+    - https://wiki.archlinux.org/title/File_permissions_and_attributes
     - `-R` for rekursivt
     - `g+w fileName` - tilføjer "write" for gruppen …. Minus kan bruges til at fjerne rettighed
     - `u+x, g+rwx, o.rwx fileName` - ændrer flere rettigheder på en gang
@@ -400,6 +407,8 @@ Og der benyttes følgende værdier :
 		- "Sticky-bit" - en markering på en folder som fortæller at filerne heri kun kan slettes af owner
   			- chmod 0+t g+t directory
   			- TODO: denne ovenstående kommando er ikke som den skal være og skal derfor tilrettes.
+    	- **lsattr/chattr** - disse kommandoer kan benyttes til at liste/change af attributterne - se vejledning på linktet https://wiki.archlinux.org/title/File_permissions_and_attributes
+    	- 
 
 
 ---
