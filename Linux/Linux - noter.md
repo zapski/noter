@@ -150,6 +150,7 @@ Kigger altid på disken som den ser ud lige nu
 	- `find -name test.TEST 2>/dev/null` dette trick fjerner de fejl der kan opstå med kommandoen når den eksempelvis besøger en folder du ikke har adgang til.
 	- `find . -name kermit.txt` - her ledes i aktuel folder på sub-foldere
 	- `find / -name kermit.txt` - denne vil generere en masse fejl og kan sorteres fra på følgende måde:
+	- `find tafe04osbServer1-diagnostic* -size 0c -type f -exec rm {} \; > results.out` - find 0 bytes filer og slet dem
 
 
 
