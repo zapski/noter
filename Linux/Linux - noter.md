@@ -198,7 +198,11 @@ Der kan benyttes følgende short-cuts når kommandoen er startet :
 - **i** - ignore case
 - **grep -r Kermit /home/wmprpee** - søger rekursivt efter Kermit
 - **grep -E "Halloween|Christmas"** - bruger regex …. Or
-
+- **grep -rnw '/data/app/batchjob07/scripts/' -e 'creation date'**
+  - `r` - recursive
+  - `n` - line number
+  - `w` - word/regexp - hvilket betyder hele strengen skal findes
+  - `e "pattern"` - se https://explainshell.com/explain?cmd=grep+-rnw+%27%2Fpath%2Fto%2Fsomewhere%2F%27+-e+%22pattern%22
 
 `touch`
 
