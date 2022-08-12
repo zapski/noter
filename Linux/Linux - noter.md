@@ -59,7 +59,7 @@ Denne kommando afløser apt-get og apt-cache. apt samler de to nævnte til en og
 ### yum - benyttet i alle redhat distribution CentOS, fedora
 
 dnf erstatter måske yum (er allerede på fedora) - men brugen er helt den samme.
-Tidligere RPM - men denne kommando kunne ikke opløse dependencies.
+Tidligere RPM - men denne kommando kunne ikke opløse dependencies. 
 
 - **/etc/yum.repos.d**
 - `yum update` - modsat apt så updaterer denne både cache og pakker og også kernel pakker etc.
