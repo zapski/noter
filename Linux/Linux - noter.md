@@ -1091,6 +1091,8 @@ Er standardiseret - filesystem hiariki standard - se www.linusfoundation.org + w
 Kopiering mellem to maskiner
 
 - **scp <filnavn> username@111.111.11.11:/home/username/Download**
+- Fra Linux SNA'en:
+	- `scp wmprpee@sktudv01:~/pelle wmprpee@sktudv02:~/pelle`
 
 ---
 ## Sikkerhed
